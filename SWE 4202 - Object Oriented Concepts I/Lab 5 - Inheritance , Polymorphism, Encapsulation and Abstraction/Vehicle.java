@@ -52,8 +52,7 @@ public abstract class Vehicle {
 
     abstract double getSlowingRate();
 
-    public void refuel(int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'refuel'");
+    public void refuel(int refuelAmount) {
+        System.out.println(refuelAmount + " is refueled in the car.");
     }
 }

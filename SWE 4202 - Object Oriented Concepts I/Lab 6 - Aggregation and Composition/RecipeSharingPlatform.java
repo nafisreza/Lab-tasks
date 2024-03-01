@@ -78,6 +78,18 @@ class User {
     public String getUserName() {
         return userName;
     }
+
+    public void getChefsList() {
+        for (int i = 0; i < favoriteChefs.size(); i++) {
+            System.out.println("Chef List: " + favoriteChefs.get(i).getChefName());            
+        }
+    }
+
+    public void getRecipeList() {
+        for (int i = 0; i < favoriteRecipes.size(); i++) {
+            System.out.println("Recipe List: " + favoriteRecipes.get(i).getRecipeName());            
+        }
+    }
 }
 
 public class RecipeSharingPlatform {
@@ -99,7 +111,8 @@ public class RecipeSharingPlatform {
         chef2.removeRecipe(recipe2); // This should also remove the recipe from the platform
 
         System.out.println("User: " + user.getUserName());
-        System.out.println("Favorite Recipes: " + user.favoriteRecipes);
-        System.out.println("Favorite Chefs: " + user.favoriteChefs);
+        user.getChefsList();
+        user.getRecipeList();
+        
     }
 }
