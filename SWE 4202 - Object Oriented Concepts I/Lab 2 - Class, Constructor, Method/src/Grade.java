@@ -30,7 +30,7 @@ public class Grade {
         }else if(percentage >= 50){
             return "C";
         }else if(percentage >= 45){
-            return "A-";
+            return "C-";
         }else if(percentage >= 40){
             return "D";
         }else{
